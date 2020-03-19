@@ -6,7 +6,7 @@ export default class extends React.Component {
   state = {
     data: {
       fields: {
-        customer_logos: []
+        customer_logos: [] 
       }
     }
   }
