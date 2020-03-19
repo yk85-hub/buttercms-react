@@ -1,7 +1,7 @@
 import React from 'react'
 import butter from './butter-client'
 import { Helmet } from 'react-helmet'
-import MenuList from '@material-ui/core/MenuList';
+import Link from '@material-ui/core/Link';
 
 export default class extends React.Component {
   state = {
@@ -34,9 +34,56 @@ export default class extends React.Component {
     
       
       
+      
+      
+      /* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    '& > * + *': {
+      marginLeft: theme.spacing(2),
+    },
+  },
+}));
+
+export default function Links() {
+  const classes = useStyles();
+  const preventDefault = event => event.preventDefault();
+
+  return (
+    <Typography className={classes.root}>
       <Link href="/blog" onClick={preventDefault}>
-    Blog
-  </Link>
+        Link1
+      </Link>
+      <Link href="#" onClick={preventDefault} color="inherit">
+        {'color="inherit"'}
+      </Link>
+      <Link href="#" onClick={preventDefault} variant="body2">
+        {'variant="body2"'}
+      </Link>
+    </Typography>
+  );
+}
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
       
         <ul>
           {fields.customer_logos.map((logo) => {
