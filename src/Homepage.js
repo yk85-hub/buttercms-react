@@ -1,6 +1,7 @@
 import React from 'react'
 import butter from './butter-client'
 import { Helmet } from 'react-helmet'
+import MenuList from '@material-ui/core/MenuList';
 
 export default class extends React.Component {
   state = {
@@ -28,6 +29,25 @@ export default class extends React.Component {
         <img src={fields.hero_image} />
         <button>{fields.call_to_action}</button>
         <h3>Customers Love Us!</h3>
+      
+      
+      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+  Open Menu
+</Button>
+<Menu
+  id="simple-menu"
+  anchorEl={anchorEl}
+  keepMounted
+  open={Boolean(anchorEl)}
+  onClose={handleClose}
+>
+  <MenuItem onClick={handleClose}>Profile</MenuItem>
+  <MenuItem onClick={handleClose}>My account</MenuItem>
+  <MenuItem onClick={handleClose}>Logout</MenuItem>
+</Menu>
+      
+      
+      
       
         <ul>
           {fields.customer_logos.map((logo) => {
