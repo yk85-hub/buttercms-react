@@ -29,7 +29,6 @@ export default class extends React.Component {
         <button>{fields.call_to_action}</button>
         <h3>Customers Love Us!</h3>
       
-      <Link to="/blog">Blog</Link>
         <ul>
           {fields.customer_logos.map((logo) => {
             return (
