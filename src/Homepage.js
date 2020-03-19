@@ -34,7 +34,44 @@ export default class extends React.Component {
       
       
       
-    /* eslint-disable jsx-a11y/anchor-is-valid */
+ 
+      
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
+      
+        <ul>
+          {fields.customer_logos.map((logo) => {
+            return (
+              <li>
+                <img src={logo.logo_image} />
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    )
+  }
+  
+  
+  
+  
+  
+  
+  
+}
+
+
+
+
 import React from 'react';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
@@ -69,29 +106,3 @@ export default function Links() {
   );
 }
 
-      
-  
-      
-      
-      
-      
-      
-      
-      
-      
-      
-  
-      
-        <ul>
-          {fields.customer_logos.map((logo) => {
-            return (
-              <li>
-                <img src={logo.logo_image} />
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-    )
-  }
-}
