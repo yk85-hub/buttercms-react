@@ -47,7 +47,9 @@ export default class extends React.Component {
 </Menu>
       
       
-      
+      <Link href="/blog" onClick={preventDefault}>
+    Blog
+  </Link>
       
         <ul>
           {fields.customer_logos.map((logo) => {
