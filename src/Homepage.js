@@ -2,9 +2,7 @@ import React from 'react'
 import butter from './butter-client'
 import { Helmet } from 'react-helmet'
 
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
+
 
 
 export default class extends React.Component {
